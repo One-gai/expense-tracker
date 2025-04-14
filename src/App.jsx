@@ -46,7 +46,7 @@ function App() {
       <h1>Expense Tracker</h1>
 
       {/* Search bar */}
-      <input
+      <input id='srhipt'
         type="text"
         placeholder="Search expenses..."
         value={searchTerm}
@@ -86,7 +86,7 @@ function App() {
           onChange={handleChange}
           required
         />
-        <button type="submit">Add Expense</button>
+        <button id='expbtn' type="submit">Add Expense</button>
       </form>
 
       {/* Expense table */}
@@ -107,7 +107,7 @@ function App() {
               <td>{exp.description}</td>
               <td>${exp.amount}</td>
               <td>{exp.date}</td>
-              <button onClick={() => handleDelete(exp.id)}>Delete</button>
+              <button id='dltbtn' onClick={() => handleDelete(exp.id)}>Delete</button>
             </tr>
           ))}
         </tbody>

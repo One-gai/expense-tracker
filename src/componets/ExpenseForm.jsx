@@ -39,7 +39,7 @@ function ExpenseForm({ onAddExpense }) {
   function handleSubmit(e) {
     e.preventDefault();
     const newExpense = {
-      id: Date.now(), // unique id
+      id:Date.now(), // unique id
       description,
       category,
       amount: parseFloat(amount),
